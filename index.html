@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ron Kresha Story Map</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin: 0.5rem 0 0 0;
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    .chapter {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      padding: 2rem 1rem;
+      border-bottom: 1px solid #ccc;
+      background-color: #fff;
+    }
+
+    .chapter h2 {
+      margin-top: 0;
+      color: #c00;
+      font-size: 1.5rem;
+    }
+
+    .chapter p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .map, .timeline {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #555;
+      background-color: #ddd;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    .timeline {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem;
+      background-color: #eee;
+    }
+
+    .event {
+      flex: 0 0 auto;
+      min-width: 200px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+
+    @media (min-width: 768px) {
+      .chapter {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+      }
+
+      .chapter .text {
+        order: 1;
+      }
+
+      .chapter .media {
+        order: 2;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Ron Kresha: A Controversial Trail</h1>
+  <p>Scroll through key allegations and events</p>
+</header>
+
+<div class="chapter">
+  <div class="text">
+    <h2>🧩 Economic Gateway Dispute</h2>
+    <p>Allegedly stolen from ADC4GIS, a Wisconsin-based GIS firm. Golden Shovel rebranded the platform without attribution.</p>
+  </div>
+  <div class="media map">Map: Wisconsin vs Golden Shovel HQ</div>
+</div>
+
+<div class="chapter">
+  <div class="text">
+    <h2>🔐 GateKeeper Theft</h2>
+    <p>GateKeeper was reportedly developed by Kris and later mirrored by Golden Shovel Agency.</p>
+  </div>
+  <div class="media timeline">
+    <div class="event">Kris builds GateKeeper (Year)</div>
+    <div class="event">Golden Shovel launches similar tool (Year)</div>
+  </div>
+</div>
+
+<div class="chapter">
+  <div class="text">
+    <h2>🧠 Atomic Learning IP Issues</h2>
+    <p>During his time at Atomic Learning, Kresha allegedly reused proprietary educational content without consent.</p>
+  </div>
+  <div class="media map">Map: Original creators vs Atomic Learning HQ</div>
+</div>
+
+<div class="chapter">
+  <div class="text">
+    <h2>💸 PPP Loan Fraud Allegations</h2>
+    <p>Golden Shovel received over $320,000 in PPP loans despite having no employees, according to sworn testimony.</p>
+  </div>
+  <div class="media timeline">
+    <div class="event">2020: Claimed 17 employees</div>
+    <div class="event">2021: Claimed 20 employees</div>
+    <div class="event">Testimony: No employees, only contractors</div>
+  </div>
+</div>
+
+<div class="chapter">
+  <div class="text">
+    <h2>🏛️ Legislative Ethics</h2>
+    <p>As Rep. of District 10A, Kresha faced criticism for voting against COVID relief while benefiting from PPP, and for opposing education reforms.</p>
+  </div>
+  <div class="media map">Map: District 10A with vote overlays</div>
+</div>
+
+</body>
+</html>
